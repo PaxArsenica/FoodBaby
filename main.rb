@@ -1,10 +1,11 @@
 require 'sinatra'
 require 'yelp'
 require 'openssl'
+require 'json'
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
 get '/' do
-  erb :main
+  erb :baby
 end
 
 client = Yelp::Client.new({ consumer_key: 	"Z2VUMVUsbQ6rWNcUqRziiA",
@@ -13,7 +14,7 @@ client = Yelp::Client.new({ consumer_key: 	"Z2VUMVUsbQ6rWNcUqRziiA",
                             token_secret: "JXwLkigBHKq4QCQrLisk644vly0"
                           })
 
-# params = { term: 'food', limit: 3, category_filter: 'discgolf'}
+ hash = {limit: 5, category_filter: 'food'}
 locale = { lang:'eng' }
 
 # response = client.search('San Franciso', params, locale)
@@ -25,5 +26,17 @@ locale = { lang:'eng' }
 # }
 
 post '/food' do
-     "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+     name = params[:name]
+     city = params[:city]
+     nationality = params[:nationality]
+     meal = params[:birth_time]
+     stork = params[:stork]
+     searchStr = city + " " + name + " " + nationality + " " + meal
+     response = client.search(searchStr)
+     @business = response.businesses[0].name
+     @business_img = response.businesses[0].image_url
+     @url = response.businesses[0].url
+     @rating_img = response.businesses[0].rating_img_url
+
+     erb :baby
 end

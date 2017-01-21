@@ -6,8 +6,9 @@
 
 <body>
 
-  <form method="POST" action="/food">
-    <p> Name of Child:<input type="text" name="name"></p>
+  <form method="POST" action="/food" id="babyDetails">
+    <p> Name of Child: <input type="text" name="name"></p>
+    <p> Hometown: <input type="text" name="city"></p>
     <p>
       Nationality:
       <select name="nationality">
@@ -34,9 +35,11 @@
       I Want The Stork To Deliver My Baby?  <input type="checkbox" name="stork" value="yes">
     </p>
 
-    <input type="submit" value="Where Can I Find My Baby?"</input>
+    <input type="submit" value="Where Can I Find My Baby?" id="submitBtn"/>
   </form>
 
+
+   <%= yield %>
 </body>
 
 </html>
