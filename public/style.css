@@ -1,19 +1,37 @@
+@font-face { font-family: bubblebutt; src: url('bubblebutt.ttf'); }
+
 html {
 
   /*background-color: #00539F;*/
 
   font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
 
-  @font-face { font-family: bubblebutt; src: url('bubblebuttacad.otf'); }
 
 }
 
 body {
-  background: linear-gradient(blue,white);
+  background: linear-gradient(white,#006699);
   /*background-color: red;*/
 }
 
 h1{
+  font-family: bubblebutt;
+  text-align: center;
+  color: #006699;
+  font-size: 100px;
+  letter-spacing: 4px;
+  margin-top: 45px;
+}
+
+h2{
+  font-family: 'Josefin Sans';
+  text-align: center;
+  color: #99ddff;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+/*h1{
 
   font-size: 60px;
 
@@ -26,4 +44,4 @@ h1{
   color: #b9cdd8;
 
   text-shadow: 3px 3px 1px black
-}
+}*/
