@@ -8,6 +8,7 @@ get '/' do
   erb :baby
 end
 
+<<<<<<< HEAD
 client = Yelp::Client.new({ consumer_key: 	"Z2VUMVUsbQ6rWNcUqRziiA",
                             consumer_secret: "eJV9557OSLYftsEV2TSGmsja7b0",
                             token: "GtB4sbw8uZmdoOtNW-iESuFnmMWXUyvl",
@@ -40,3 +41,10 @@ post '/food' do
 
      erb :baby
 end
+=======
+# client = Yelp::Client.new({ consumer_key: YOUR_CONSUMER_KEY,
+#                             consumer_secret: YOUR_CONSUMER_SECRET,
+#                             token: YOUR_TOKEN,
+#                             token_secret: YOUR_TOKEN_SECRET
+#                           })
+>>>>>>> Melat
