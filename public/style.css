@@ -45,6 +45,36 @@ h2{
   left: 0;
 }
 
+#babyDetails {
+
+  border-style: solid;
+  border-color: #006699;
+  background-color: #006699;
+  width: 350px;
+  height: 250px;
+  overflow:hidden;
+  border-width: medium;
+  border-radius: 10px;
+  font-family: 'Josefin Sans';
+  color: #99ddff;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#findBaby {
+  font-family: 'Josefin Sans';
+  color: #99ddff;
+}
+
+#result {
+  font-family: 'Josefin Sans';
+  color: #99ddff;
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
 /*h1{
 
   font-size: 60px;
