@@ -70,9 +70,16 @@ h2{
 #result {
   font-family: 'Josefin Sans';
   color: #99ddff;
+<<<<<<< HEAD
   font-size: 40px;
   margin: 0px;
   margin-bottom: 10px;
+=======
+  font-size: 100px;
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+>>>>>>> 95db0486f9391c0bac7ce203294efdf7f7af292a
 }
 
 /*h1{

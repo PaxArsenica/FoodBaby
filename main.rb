@@ -33,6 +33,7 @@ post '/food' do
      stork = params[:stork]
      searchStr = city + " " + name + " " + nationality + " " + meal
      response = client.search(searchStr, hash)
+
      @business = response.businesses[0].name
      @business_img = response.businesses[0].image_url
      @url = response.businesses[0].url
