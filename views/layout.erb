@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-</head>
+  <head>
+    <title> FoodBaby</title>
+    <link href = "style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" href="FoodBaby.png">
+  </head>
 
-<body>
+  <body>
+    <img class="boy" src="foodbaby.gif" alt="Gif of food baby."/>
+    <div id="title">FoodBaby</div>
+    <img class="boy" src="foodbaby.gif" alt="Gif of food baby."/>
 
-  <form method="POST" action="/food" id="babyDetails">
-    <p> Name of Child: <input type="text" name="name"></p>
-    <p> Hometown: <input type="text" name="city"></p>
-    <p>
-      Nationality:
-      <select name="nationality">
-        <option value="American">American</option>
-        <option value="Chinese">Chinese</option>
-        <option value="Greek">Greek</option>
-        <option value="Bakery">Fairy</option>
-        <option value="Haitian">Haitian</option>
-        <option value="Indian">Indian</option>
-        <option value="Japanese">Japanese</option>
-        <option value="Mexican">Mexican</option>
-      </select>
+    <h2>
+      Created for HackGTeeny by Arsene Lakpa, Joseph Hooper, and Melat Hagos
+    </h2>
+      <div>
 
-    </p>
-    <p>
-      Time of Delivery:
-      <select name="birth_time">
-        <option value="morning">Morning</option>
-        <option value="afternoon">Afternoon</option>
-        <option value="night">Night</option>
-      </select>
-    </p>
-    <p>
-      I Want The Stork To Deliver My Baby?  <input type="checkbox" name="stork" value="yes">
-    </p>
+      <form method="POST" action="/food" id="babyDetails">
+        <p> Name of Child: <input type="text" name="name"></p>
+        <p> Hometown: <input type="text" name="city"></p>
+        <p>
+          Nationality:
+          <select name="nationality">
+            <option value="American">American</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Bakery">French</option>
+            <option value="Greek">Greek</option>
+            <option value="Italian">Italian</option>
+            <option value="Indian">Indian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Mexican">Mexican</option>
+          </select>
 
-    <input type="submit" value="Where Can I Find My Baby?" id="submitBtn"/>
-  </form>
+        </p>
+        <p>
+          Time of Delivery:
+          <select name="birth_time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Noon</option>
+            <option value="night">Night</option>
+          </select>
+        </p>
+        <p>
+          I Want The Stork To Deliver  <input type="checkbox" name="stork" value="yes">
+        </p>
+
+        <input type="submit" value="Where Can I Find My Baby?" id="submitBtn"/>
+      </form>
+    </div>
 
 
-   <%= yield %>
-</body>
+     <%= yield %>
+
+  </body>
 
 </html>
